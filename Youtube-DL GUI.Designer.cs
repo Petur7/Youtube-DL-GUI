@@ -31,6 +31,7 @@ namespace Youtube_DL_GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Youtube_DL_GUI));
             this.tabLists = new System.Windows.Forms.TabControl();
             this.tabSingleDownload = new System.Windows.Forms.TabPage();
             this.buttonSDProgressDownload = new System.Windows.Forms.Button();
@@ -632,6 +633,7 @@ namespace Youtube_DL_GUI
             this.ClientSize = new System.Drawing.Size(800, 434);
             this.Controls.Add(this.textStatus);
             this.Controls.Add(this.tabLists);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Youtube_DL_GUI";
             this.Text = "Youtube-DL GUI";
             this.tabLists.ResumeLayout(false);
